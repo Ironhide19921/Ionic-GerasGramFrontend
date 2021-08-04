@@ -26,7 +26,7 @@ export class UsuarioService {
 
       this.http.post(`${ URL }/user/login`, data)
       .subscribe( async resp => {
-        console.log(resp);
+        console.log(resp, 'resp');
 
         // tslint:disable-next-line:no-string-literal
         if ( resp['ok'] ) {
